@@ -44,7 +44,7 @@ before_install:
 
 script:
   - ls
-  - script/check-style
+  - scripts/check-style
   - CC=/usr/bin/gcc-9 CXX=/usr/bin/g++-9 bazel --output_base=${HOME}/bazel/outbase test //...
 
 notifications:
